@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/datalc"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_weight="0.85"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/kurslar"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:background="@drawable/linearlayout_kurslar">
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/kurslar"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kurslar"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/guruhlar"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:background="@drawable/linearlayout_kurslar">
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/guruhlar"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guruhlar"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mentorlar"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="165dp"
+            android:layout_height="120dp"
+            android:background="@drawable/linearlayout_kurslar">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/mentorlar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mentorlar"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
